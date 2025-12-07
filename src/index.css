@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+
+*{
+  transition-property: background-color, color, padding, border, scale;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+}
+
+
+body{
+  width: 100%;
+  background-color: rgb(25, 32, 41);
+  color: white;
+  font-family: "Varela Round", sans-serif;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.active-line{
+  background: #ffffff;
+  color: #000;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.inactive-link{
+  color: #ffffff;
+  /* padding: 4px 20px; */
+  border-radius: 10px;
+}
+
+button:active{
+  scale: .95;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-white/30 border-3 border-white/50;
+  border-radius: 10px;
+  transition: all .2s linear;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8f8f8f;
+}
