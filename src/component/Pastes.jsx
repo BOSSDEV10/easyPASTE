@@ -91,9 +91,9 @@ const Pastes = () => {
             <div className="w-full h-full overflow-y-auto overflow-x-hidden flex flex-col gap-4 px-1 mb-5">
                 {filteredList.length === 0 && (
                     <div className="w-full flex flex-col items-center justify-center text-center mt-20 text-white/60 px-5">
-                        <h2 className="text-2xl sm:text-3xl font-light">No Results Found</h2>
+                        <h2 className="text-2xl sm:text-3xl font-light">{list.length <= 0 ? "Paste Is Empty" : "No Results Found"}</h2>
                         <p className="text-base sm:text-lg mt-3">
-                            {list.length <=0 ? "Thare Is No Paste Available" : "Try searching with another keyword."}
+                            {list.length <= 0 ? "Thare Is No Paste Available" : "Try searching with another keyword."}
                         </p>
                     </div>
                 )}
