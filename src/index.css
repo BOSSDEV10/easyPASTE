@@ -6,7 +6,7 @@
 
 
 *{
-  transition-property: background-color, color, padding, border, scale;
+  transition-property: background-color, color, padding, border, scale, border-radius;
   transition-duration: .2s;
   transition-timing-function: linear;
 }
@@ -32,7 +32,6 @@ body{
 .inactive-link{
   color: #ffffff;
   /* padding: 4px 20px; */
-  border-radius: 10px;
 }
 
 button:active{

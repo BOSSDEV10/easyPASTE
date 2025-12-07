@@ -32,7 +32,7 @@ const Pastes = () => {
 
 
     return (
-        <div className="w-full h-[calc(100vh-80px)] px-4 sm:px-8 md:px-20 lg:px-50 pt-12 flex flex-col gap-10 div">
+        <div className="w-full h-[calc(100vh-100px)] px-4 sm:px-8 md:px-20 lg:px-50 pt-12 flex flex-col gap-10 div">
             <div className="w-full flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 sm:gap-0">
                 <h1 className="text-3xl sm:text-4xl font-['Advent_Pro'] font-thin tracking-wide">
                     All Pastes

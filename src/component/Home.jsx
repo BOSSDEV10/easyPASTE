@@ -72,7 +72,7 @@ const Home = () => {
 
 
     return (
-        <div className="w-full h-[calc(100vh-80px)] min-h-screen px-4 sm:px-8 md:px-20 lg:px-50 pt-12 flex flex-col gap-10 div">
+        <div className="w-full h-[calc(100vh-100px)] px-4 sm:px-8 md:px-20 lg:px-50 pt-12 flex flex-col gap-10 div">
             <h1 className="text-3xl sm:text-4xl font-['Advent_Pro'] font-thin tracking-wide">
                 {pasteID ? "Edit Paste" : "Add Paste"}
             </h1>
