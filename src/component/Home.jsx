@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useSearchParams } from "react-router-dom";
 import { addToPaste, updateToPaste } from "../features/Pastes/pastesSlice";
@@ -11,6 +11,7 @@ const Home = () => {
     const [searchParams, setSearchParams] = useSearchParams();
     const pasteID = searchParams.get('pasteID');
     let allPastes = useSelector((state) => state.paste.value);
+    const div = useRef()
 
     const dispatch = useDispatch()
 
@@ -71,7 +72,7 @@ const Home = () => {
 
 
     return (
-        <div className="w-full h-[calc(100vh-80px)] min-h-screen px-4 sm:px-8 md:px-20 lg:px-50 pt-12 flex flex-col gap-10">
+        <div className="w-full h-[calc(100vh-80px)] min-h-screen px-4 sm:px-8 md:px-20 lg:px-50 pt-12 flex flex-col gap-10 div">
             <h1 className="text-3xl sm:text-4xl font-['Advent_Pro'] font-thin tracking-wide">
                 {pasteID ? "Edit Paste" : "Add Paste"}
             </h1>
